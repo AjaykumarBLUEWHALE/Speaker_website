@@ -1,0 +1,181 @@
+
+/* From Uiverse.io by SmookyDev */ 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+.card1{
+    background-color: black;
+    color: white;
+  border-radius: 50px;
+  width: 200px !important;
+  height: 250px !important;
+  position: relative;
+  right: -1150px;
+  top: -630px;
+}
+.card1 h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.card1 p {
+
+    font-size: 0.8rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: whitesmoke;
+}
+.center_div {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 5px;
+}
+
+.wave {
+width: 1rem;
+height: 40px;
+background-color:whitesmoke;
+margin: 0 4px;
+border-radius: 0.4rem;
+animation: wave 1.5s linear infinite;
+transform-origin: center;
+}
+
+@keyframes wave {
+0% {
+transform: scale(0);
+filter: hue-rotate(90deg) blur(100px);
+}
+25% {
+transform: scale(0);
+filter: hue-rotate(120deg) blur(50px);
+}
+50% {
+transform: scale(1);
+filter: hue-rotate(180deg) blur(25px);
+}
+25% {
+transform: scale(0);
+filter: hue-rotate(360deg) blur(2px);
+}
+100% {
+transform: scale(0);
+filter: hue-rotate(0deg) blur(0);
+}
+}
+
+.wave:nth-child(2) {
+animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+animation-delay: 0.9s;
+}
+
+/*card2*/
+.card2{
+    position: relative;
+    top: -630px;
+   right: -1130px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    width: 200px !important;
+    height: 340px !important;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+.card2 h1 {
+
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 30px;
+    position: absolute;
+    bottom: 10px;
+    top: 200px;
+   
+}
+
+  
+ 
+.card2 p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: whitesmoke;
+    max-width: 100%;
+    text-align: justify;
+  
+    position: absolute;
+    bottom: 10px;
+    top: 247px;
+    
+  }
+  
+
+/* From Uiverse.io by xXJollyHAKERXx */ 
+.spinner {
+  background-image: linear-gradient(rgb(186, 66, 255) 35%,rgb(0, 225, 255));
+  width: 100px;
+  height: 100px;
+  animation: spinning82341 1.7s linear infinite;
+  text-align: center;
+  border-radius: 50px;
+  filter: blur(1px);
+  position: relative;
+  top: 44px;
+    left: 29px;
+  box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+}
+
+.spinner1 {
+  background-color: rgb(36, 36, 36);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  filter: blur(10px);
+}
+
+@keyframes spinning82341 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* new add btn */

@@ -1,0 +1,97 @@
+.home-btn {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-style: bold;
+    font-weight: 600;
+    position: relative;
+    top: -268px;
+    left: -100px;
+  }
+  
+  /* On click (active state) */
+  .home-btn:hover {
+    background-color: white;
+    color: black;
+    font-style: bold;
+    font-weight: 600;
+  }
+  
+  
+  
+  /* SVG icon base style */
+  .add-icon {
+    stroke: #a1a1aa; /* zinc-400 */
+    fill: none;
+    transition: transform 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
+  }
+  
+  /* Hover state: rotate the icon only */
+  .add-btn:hover .add-icon {
+    transform: rotate(90deg);
+    fill: #27272a; /* zinc-800 */
+  }
+  
+  /* Active (clicking) state: stroke + fill + no transition */
+  .add-btn:active .add-icon {
+    stroke: #e4e4e7; /* zinc-200 */
+    fill: #52525b;   /* zinc-600 */
+    transition-duration: 0s;
+  }
+  
+  /*add to cart btn css*/
+  /* From Uiverse.io by alexmaracinaru */ 
+button {
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: white;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    position: relative;
+    top: -20px;
+    height: 39px;
+  }
+  
+  
+  
+  button > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  .speaker {
+    position: absolute; /* scrolls with the page */
+    top: 50%;           /* adjust this as needed */
+    left: 55%;          /* adjust this as needed */
+/* transform: translate(-50%, -50%) rotate(-25deg);  -25deg tilts left */
+ transform: translate(-50%, -50%) rotate(-25deg) scaleY(1);
+
+    z-index: 999;
+    width: 100px;
+    height: auto;
+    overflow: hidden;
+  }
+  model-viewer.speaker {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    filter: none !important;
+  }
+  

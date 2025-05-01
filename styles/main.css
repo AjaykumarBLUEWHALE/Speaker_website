@@ -1,0 +1,264 @@
+body{
+    background-color:white;
+    margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* ✅ hides horizontal scroll */
+  height: 100vh; /* ✅ sets height to 100% of viewport height */
+  overflow-y: auto;   /* ✅ only show vertical scroll if needed */
+  
+}
+.col.py-3{
+
+    border-radius: 20px;
+    position: relative;
+    left: 20px;
+    top: -5px;
+}
+
+  .d-flex.flex-column.align-items-center.align-items-sm-start.px-3.pt-2.text-white.min-vh-100{
+    background-color: black !important; /* Overrides Bootstrap if needed */
+    color: white;
+    border-radius: 20px;
+    width: 90px;
+    height: 100%;
+    position: relative;
+    left: 10px;
+    top: 10px;
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+    filter: invert(1);
+    padding: 7px;
+  }
+  .icon2{
+    width: 45px;
+    height: 45px;
+    filter: invert(1);
+    position: relative;
+    top: 20px;
+    left: 10px;
+  }
+  .icon2:hover{
+    background-color: white;
+    filter: invert(0);
+    border-radius: 50%;
+  }
+.icon:hover{
+    background-color: white;
+    filter: invert(0);
+    border-radius: 50%;
+  }
+  .nav-item{
+    position: relative;
+    top: 20px;
+    left: 5px;
+    padding: 4px;
+
+  }
+  /*adding background image to the body*/
+  .btn-nav {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/251c09db-ab6d-4fd9-a3a9-cb7a59e1775a/dfxbna2-bafec797-330c-46f4-9873-100fe86473f9.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI1MWMwOWRiLWFiNmQtNGZkOS1hM2E5LWNiN2E1OWUxNzc1YVwvZGZ4Ym5hMi1iYWZlYzc5Ny0zMzBjLTQ2ZjQtOTg3My0xMDBmZTg2NDczZjkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.kv6qJmUiWOyFhwK_pfUBxbYTP3W4rZIghmGox0CilVs');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    min-height: 100vh;
+    display: flex;
+    gap: 20px;
+    width: 1010px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative; /* Needed for pseudo-element */
+    z-index: 1;
+  }
+  .btn-nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 40px;
+    background: rgb(24, 23, 23); /* or match your page background */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    z-index: 2;
+  }
+  
+  
+  /*notch css*/
+  .notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 40px;
+    color: rgb(24, 23, 23);
+    background: white; /* match your background color */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 28px;
+    z-index: 2;
+  }
+
+      .card {
+        position: relative;
+        border: solid 10px white;
+        border-radius: 50px;
+        left: -530px;
+        width: 360px !important;
+        height: 200px !important;
+        top: 209px;
+        background-color: black;
+        color: white;
+        overflow: hidden;
+      }
+      .card-text {
+        font-size: 12px; /* Decreased font size */
+        margin-bottom: 10px;
+        position: relative;
+        top: -20px;
+      }
+      /* rating stars */
+      /* From Uiverse.io by andrew-demchenk0 */ 
+      .rating{
+        position: relative;
+        left: -215px;
+        top: -20px;
+      }
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+    font-size: 22px;
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: white;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: white;
+  }
+  
+  .rating > input:checked ~ label {
+    color: white;
+  }
+  
+
+  .add-btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    position: relative;
+    top: -250px;
+    right: -500px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  }
+  /*hamburger menu*/
+
+  /* Hide checkbox */
+#checkbox2 {
+  display: none;
+}
+
+/* Wrapper: White circle around the button */
+.circle-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  border: solid 2px whitesmoke;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* padding between circle and toggle */
+  position: relative;
+  top: -270px;
+  right: -490px;
+  height: 50px;
+  width: 50px;
+}
+
+/* Toggle button inside the circle */
+.toggle2 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  transition: transform 0.5s;
+}
+
+/* Individual bars */
+.bars {
+  width: 100%;
+  height: 3px;
+  background-color: whitesmoke;
+  border-radius: 6px;
+}
+
+/* Middle bar transition */
+#bar5 {
+  transition: transform 0.5s;
+}
+
+/* Top and bottom bar width default */
+#bar4, #bar6 {
+  width: 80%;
+}
+
+/* When checkbox is checked, animate bars */
+#checkbox2:checked + .toggle2 .bars {
+  position: absolute;
+  transition: all 0.5s;
+}
+
+#checkbox2:checked + .toggle2 #bar5 {
+  transform: scaleX(0);
+}
+
+#checkbox2:checked + .toggle2 #bar4 {
+  width: 100%;
+  transform: rotate(45deg);
+}
+
+#checkbox2:checked + .toggle2 #bar6 {
+  width: 100%;
+  transform: rotate(-45deg);
+}
+
+#checkbox2:checked + .toggle2 {
+  transform: rotate(180deg);
+}
