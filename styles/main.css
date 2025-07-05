@@ -112,7 +112,7 @@ body{
 
       .card {
         position: relative;
-        border: solid 10px white;
+        border: solid 10px  rgb(31, 30, 30);
         border-radius: 50px;
         left: -530px;
         width: 360px !important;
